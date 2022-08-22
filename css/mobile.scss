@@ -1,0 +1,125 @@
+@media screen and (max-width: 760px) {
+    #nav-bar {
+        margin: 0.3rem 0;
+
+        .nav-bar {
+            &-main {
+                width: 60px;
+
+                img {
+                    display: none !important;
+                }
+
+            }
+
+            &-menu {
+                justify-content: flex-end;
+                flex-direction: row-reverse;
+            }
+        }
+
+        .container {
+            display: block;
+
+        }
+    }
+
+    #about {
+        height: auto;
+
+        .container {
+            grid-template-columns: 1fr;
+
+            #target {
+                padding-left: 5%;
+                width: 94%;
+
+                h1 {
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            #personal-info {
+                padding-left: 5%;
+
+                h1 {
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                .social-icons {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    #job-info {
+        .container {
+            grid-template-columns: 1fr;
+            width: 95%;
+            gap: 0;
+
+            >div {
+                margin: 1% 0;
+            }
+        }
+    }
+
+    #certificate {
+        .container {
+            width: 95%;
+        }
+
+        .certificates {
+            grid-template-columns: 1fr;
+
+            &-detail {
+                &:nth-child(2n) {
+                    div:first-child {
+                        border-left: none;
+                        padding-left: 3%;
+                    }
+                }
+
+                border-bottom: 1px solid #d6c08d;
+            }
+        }
+    }
+
+    #project {
+        .container {
+            width: 95%;
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    #footer {
+        ul {
+
+            li {
+                i {
+                    display: block;
+                    height: 1rem;
+                    width: 1rem;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@media screen and (min-device-width: 670px) and (max-device-width: 1240px) {
+
+    body {
+        width: 95%;
+    }
+
+    #about {
+        .container {
+            width: 100%;
+
+            #target {
+                width: 80%;
+                padding-left: 10%;
+            }
+        }
+    }
+
+    #job-info {
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+            width: 95%;
+
+            >div {
+                h1 {
+                    i {
+                        font-size: 2.5rem;
+                        margin: 0;
+                    }
+                }
+
+                &:nth-child(6) {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    #nav-bar {
+        width: 80%;
+
+        .container {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+
+    #certificate {
+        .container {
+            width: 95%;
+        }
+    }
+
+
+    #project {
+        .container {
+            width: 95%;
+        }
+
+        .projects {
+            gap: 0.5rem;
+
+            &-detail-year {
+                >span:first-child {
+                    font-size: 0.8rem;
+                    padding: 0.3rem 1rem;
+                    margin: 0 0.5rem;
+                }
+            }
+
+
+        }
+    }
+
+    .nav-bar-main {
+        width: 60px;
+
+        img {
+            display: none !important;
+        }
+
+    }
+
+    html {
+        font-size: 13px;
+    }
+}
